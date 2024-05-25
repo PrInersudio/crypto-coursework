@@ -11,3 +11,5 @@ class Bytes:
         return self.b == other.b
     def __repr__(self) -> str:
         return "0x" + self.b.hex()
+    def to_bytes(self) -> bytes:
+        return bytes(self.b)
